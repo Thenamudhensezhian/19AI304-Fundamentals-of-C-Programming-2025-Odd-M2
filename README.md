@@ -56,7 +56,24 @@
 ### Step 11:
   Stop
 # Program:
+~~~
+#include <stdio.h>
+
+int main() {
+    int M, N;
+
+    scanf("%d %d", &M, &N);
+
+    for(int i = N; i >= M; i--) {
+        printf("%d ", i);
+    }
+
+    return 0;
+}
+~~~
 # Output:
+<img width="995" height="223" alt="image" src="https://github.com/user-attachments/assets/006c17fe-d93a-4127-8b1e-e56a9c9a4ef7" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -88,7 +105,25 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 
 # Program:
+~~~
+#include <stdio.h>
+
+int main() {
+    int i, j, n;
+    scanf("%d", &n);
+    for(i = 1; i <= n; i++) {
+        for(j = 1; j <= i; j++) {
+            printf("*");
+        }
+        printf("\n"); 
+    }
+
+    return 0;
+}
+~~~
 # Output:
+<img width="560" height="313" alt="image" src="https://github.com/user-attachments/assets/410465c6-dcdd-4506-83a3-719820435a70" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -131,7 +166,36 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7:   
   Stop
 # Program:
+~~~
+#include <stdio.h>
+
+// Function for addition
+void addition(int a, int b) {
+    printf("Addition: %d\n", a + b);
+}
+
+// Function for subtraction
+void subtraction(int a, int b) {
+    printf("Subtraction: %d\n", a - b);
+}
+
+int main() {
+    int x, y;
+
+    // Read input
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    // Function calls
+    addition(x, y);
+    subtraction(x, y);
+
+    return 0;
+}
+~~~
 # Output:
+<img width="851" height="242" alt="image" src="https://github.com/user-attachments/assets/b12a2c9f-e15b-4820-ae3a-4edc737cff8b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -179,7 +243,22 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:   
   Stop
 # Program:
+~~~
+#include <stdio.h>
+int main() {
+    int num, sum = 0;
+
+    scanf("%d", &num);
+    for (; num != 0; num = num / 10) {
+        sum += num % 10;
+    }
+    printf("%d", sum);
+    return 0;
+}
+~~~
 # Output:
+<img width="516" height="288" alt="image" src="https://github.com/user-attachments/assets/4f91088b-707b-4bb5-b466-bd2f1c3a155c" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -232,6 +311,27 @@ Thus, the program was implemented and executed successfully, and the required ou
   Decrease i by 1 and go back to Step 6.
 ### Step 8:
   Stop
+###Program:
+~~~
+#include <stdio.h>
+void factorial(int n) {
+    int i;
+    long long fact = 1;
+    for(i = 1; i <= n; i++) {
+        fact = fact * i;
+    }
+    printf("Factorial value is: %lld", fact);
+}
+int main() {
+    int num;
+    scanf("%d", &num);   
+    factorial(num);     
+    return 0;
+}
+~~~
+###Output:
+<img width="945" height="254" alt="image" src="https://github.com/user-attachments/assets/4a4a7a7f-fc4a-4ccf-9cbd-cd9a2d42a80f" />
+
 # Result:
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
